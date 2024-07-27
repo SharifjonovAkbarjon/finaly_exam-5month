@@ -12,7 +12,6 @@ for (let i = 0; i < 8; i++) {
         <div class="skeleton__img skeleton__animation"></div>
         <div class="skeleton__line skeleton__animation"></div>
         <div class="skeleton__line skeleton__animation"></div>
-        <div class="skeleton__line skeleton__animation"></div>
     `;
     skeleton.append(skeletonItem);
 }
@@ -52,8 +51,11 @@ function createCard(data) {
                 <button class="api__btns">Add To Cart</button>
 
                </div>
-            <h3>${product.brand}</h3>
-            <p class="desc" title="${product.description}">${product.description}</p>
+            <h3>${product.title}</h3>
+                <div class="api__title">
+                <p class="api__price">$${product.price}</p>
+                <p class="api__rating">(${product.rating})</p>
+                </div>
 
         `;
         wrapper.appendChild(cardItem);

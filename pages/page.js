@@ -1,6 +1,7 @@
 
 const API_URL = "https://dummyjson.com";
 const content = document.querySelector(".content")
+const skeleton = document.querySelector(".skeleton");
 
 async function fetchSingleData(api) {
   let query = new URLSearchParams(window.location.search);
@@ -28,7 +29,7 @@ function createContent(data) {
       <div class="content_text">
       <h1>${data.title}</h1>
       <p class="product_price">$${data.price}</p>
-      <p>${data.description}</p>
+      <p class="product__description">${data.description}</p>
       <hr>
          <div class="ap_siz">
         <p class="size">Size:</p>
@@ -45,7 +46,7 @@ function createContent(data) {
             <div class="hisob">+</div>
         </div>
         <div class="buttons">
-            <button>Buy Now</button>
+            <button class="api__btns">Buy Now</button>
             <div class="icons_api">
                 <i class="fa-regular fa-heart"></i>
             </div>
@@ -63,11 +64,11 @@ function createContent(data) {
         </div>
         <div class="body">
             <div class="ikonka">
-                <i class="fa-solid fa-truck-fast"></i>
+                <i class="fa-solid fa-rotate-left"></i>
             </div>
             <div class="delivery__title">
-                <p class="delivery__text">Free Delivery</p>
-                <p class="delivery__paragraph">Enter your postal code for Delivery Availability</p>
+                <p class="delivery__text">Return Delivery</p>
+                <p class="delivery__paragraph">Free 30 Days Delivery Returns. Details</p>
             </div>
         </div>
     </div>
@@ -83,4 +84,16 @@ function showSidebar() {
 function hideSidebar() {
   const sidebar = document.querySelector('.sidebar')
   sidebar.style.display = 'none'
+}
+
+for (let i = 0; i < 8; i++) {
+  let skeletonItem = document.createElement("div");
+  skeletonItem.classList.add("skeleton__item");
+  skeletonItem.innerHTML = `
+      <div class="skeleton__img skeleton__animation"></div>
+      <div class="skeleton__line skeleton__animation"></div>
+      <div class="skeleton__line skeleton__animation"></div>
+      <div class="skeleton__line skeleton__animation"></div>
+  `;
+  skeleton.append(skeletonItem);
 }
