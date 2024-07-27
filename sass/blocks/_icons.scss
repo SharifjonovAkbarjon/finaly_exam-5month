@@ -1,0 +1,218 @@
+.icons {
+    width: 100%;
+    margin-top: 140px;
+}
+
+.icons__body {
+    display: flex;
+    justify-content: center;
+    gap: 8%;
+
+    .icons__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;        
+        width: 30%;
+
+        .icon__collection {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            width: 100%;
+
+            .iconka {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+
+                .icon {
+                    display: flex;
+                    padding: 14px;
+                    justify-content: center;
+                    border-radius: 50%;
+                    background: rgb(0, 0, 0, 1);
+                    box-shadow: 0 0 0 10px #c1c1c1;
+
+
+                    .fa-truck-fast,
+                    .fa-headset,
+                    .fa-square-check {
+                        color: rgb(255, 255, 255);
+                    }
+                }
+            }
+
+            .icon__title {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                align-items: center;
+
+                p {
+                    font-family: Poppins;
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 28px;
+                    text-align: center;
+
+                }
+
+                span {
+                    font-family: Poppins;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 21px;
+                    text-align: center;
+
+                }
+            }
+
+        }
+    }
+}
+
+@media  (max-width:650px){
+    .icons__body {
+        display: flex;
+        justify-content: center;
+        gap: 5%;
+    
+        .icons__wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;        
+            width: 30%;
+    
+            .icon__collection {
+                display: flex;
+                flex-direction: column;
+                gap: 14px;
+                width: 100%;
+    
+                .iconka {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+    
+    
+                    .icon {
+                        display: flex;
+                        padding: 14px;
+                        justify-content: center;
+                        border-radius: 50%;
+                        background: rgb(0, 0, 0, 1);
+                        box-shadow: 0 0 0 10px #c1c1c1;
+    
+    
+                        .fa-truck-fast,
+                        .fa-headset,
+                        .fa-square-check {
+                            color: rgb(255, 255, 255);
+                        }
+                    }
+                }
+    
+                .icon__title {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+                    align-items: center;
+    
+                    p {
+                        font-family: Poppins;
+                        font-size: 16px;
+                        font-weight: 600;
+                        line-height: 28px;
+                        text-align: center;
+    
+                    }
+    
+                    span {
+                        font-family: Poppins;
+                        font-size: 13px;
+                        font-weight: 400;
+                        line-height: 21px;
+                        text-align: center;
+    
+                    }
+                }
+    
+            }
+        }
+    }   
+}
+
+@media  (max-width:450px){
+    .icons__body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: -80px;
+    
+        .icons__wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;        
+            width: 30%;
+    
+            .icon__collection {
+                display: flex;
+                flex-direction: column;
+                gap: 14px;
+                width: 100%;
+    
+                .iconka {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+    
+    
+                    .icon {
+                        display: flex;
+                        padding: 14px;
+                        justify-content: center;
+                        border-radius: 50%;
+                        background: rgb(0, 0, 0, 1);
+                        box-shadow: 0 0 0 10px #c1c1c1;
+    
+    
+                        .fa-truck-fast,
+                        .fa-headset,
+                        .fa-square-check {
+                            color: rgb(255, 255, 255);
+                        }
+                    }
+                }
+    
+                .icon__title {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+                    align-items: center;
+    
+                    p {
+                        font-family: Poppins;
+                        font-size: 18px;
+                        font-weight: 600;
+                        line-height: 28px;
+                        text-align: center;
+    
+                    }
+    
+                    span {
+                        font-family: Poppins;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 21px;
+                        text-align: center;
+    
+                    }
+                }
+    
+            }
+        }
+    }   
+}
